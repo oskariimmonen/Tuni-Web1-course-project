@@ -1,0 +1,22 @@
+image: node:14.16
+
+
+
+
+
+
+stages:
+  - test
+
+test:
+  stage: test 
+  services:
+  - mongo:latest
+  variables: 
+    MONGO_URI: 'DBURL=mongodb://mongo:27017/WebShopDb'
+    DBURL: 'mongodb://mongo:27017/WebShopDb'  
+  script:
+    - npm install --silent
+    - npm test
+  only:
+  - master

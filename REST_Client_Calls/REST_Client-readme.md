@@ -1,0 +1,1 @@
+These are for quick testing with Visual Studio Codes Extension 'REST Client'.

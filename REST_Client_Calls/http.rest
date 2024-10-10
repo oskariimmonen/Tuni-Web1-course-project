@@ -1,0 +1,17 @@
+# These are simple api tests for VS Code extension 'REST Client'.
+# To use these, install 'REST Client'
+
+### Test index
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/hello
+
+###
+GET http://localhost:3000/index.html
+###
+GET http://localhost:3000/api/products
+
+
+### test Options
+OPTIONS http://localhost:3000/docs
